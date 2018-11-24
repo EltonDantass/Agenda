@@ -10,7 +10,7 @@ public class DataBase extends SQLiteOpenHelper {
         private static final int VERSAO_BANCO = 1;
         private Context context;
         private SQLiteDatabase dbInstancia = null;
-        DB(Context context){
+        DataBase(Context context){
             super(context,NOME_BANCO,null,VERSAO_BANCO);
             this.context = context;
         }

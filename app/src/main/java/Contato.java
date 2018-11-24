@@ -57,5 +57,11 @@ public class Contato {
     public ContentValues getContentValues(){
         ContentValues cv = new ContentValues();
         cv.put("nome",this.nome);
+        cv.put("email", this.email);
+        cv.put("telefone", this.telefone);
+        cv.put("nascimento", this.nascimento);
+        cv.put("sexo", this.sexo);
+        cv.put("promocoes", this.promocoes);
+        return cv;
     }
 }
